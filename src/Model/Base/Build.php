@@ -511,8 +511,6 @@ class Build extends Model
      * @param int|null $value
      *
      * @return bool
-     *
-     * @throws InvalidArgumentException
      */
     public function setEnvironmentId(?int $value)
     {
