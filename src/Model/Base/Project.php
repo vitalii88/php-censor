@@ -92,7 +92,7 @@ class Project extends Model
     /**
      * @return string
      */
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->data['title'];
     }
