@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 use Phinx\Db\Adapter\MysqlAdapter;
 use Phinx\Migration\AbstractMigration;
 use PHPCensor\Model\Build;
@@ -149,7 +151,7 @@ class InitialMigrationV2 extends AbstractMigration
             ->save();
 
         $projectGroups
-            ->addColumn('title', 'string', ['limit' => 100, 'null' => false])
+            ->addColumn('title', 'string', ['limit' => 100])
             ->addColumn('create_date', 'datetime')
             ->addColumn('user_id', 'integer', ['null' => true])
 
